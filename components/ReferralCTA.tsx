@@ -51,10 +51,10 @@ export default function ReferralCTA() {
               Email
             </div>
             <a
-              href="mailto:eegna@mrresidentialcare.com"
+              href="mailto:eegan@mrresidentialcare.com"
               className="mt-2 block text-[16px] font-medium text-navy-900 hover:text-brand-600"
             >
-              eegna@mrresidentialcare.com
+              eegan@mrresidentialcare.com
             </a>
           </div>
           <div>

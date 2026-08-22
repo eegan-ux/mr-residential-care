@@ -63,10 +63,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:eegna@mrresidentialcare.com"
+                  href="mailto:eegan@mrresidentialcare.com"
                   className="hover:text-navy-900"
                 >
-                  eegna@mrresidentialcare.com
+                  eegan@mrresidentialcare.com
                 </a>
               </li>
               <li>Clackamas County, Oregon</li>
