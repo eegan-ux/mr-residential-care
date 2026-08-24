@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import ReferralCTA from "@/components/ReferralCTA";
+import Careers from "@/components/Careers";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <WhyUs />
       <ReferralCTA />
+      <Careers />
       <Footer />
     </main>
   );

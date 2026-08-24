@@ -27,10 +27,11 @@ export default function Hero() {
             </h1>
 
             <p className="mt-5 max-w-lg text-[16px] leading-relaxed text-white/80 sm:text-[18px]">
-              MR Residential Care provides 24-Hour Residential Care and
-              Habilitative Support for adults with intellectual and
-              developmental disabilities — delivered with the warmth,
-              structure, and real ownership every family deserves.
+              MR Residential Care provides 24-Hour Residential Care —
+              including habilitative, skill-building support — for adults
+              with intellectual and developmental disabilities, delivered
+              with the warmth, structure, and real ownership every family
+              deserves.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">

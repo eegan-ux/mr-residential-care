@@ -11,6 +11,7 @@ const links = [
   { href: "#services", label: "Services" },
   { href: "#why-us", label: "Why Us" },
   { href: "#contact", label: "Contact" },
+  { href: "#careers", label: "Careers" },
 ];
 
 export default function Navbar() {

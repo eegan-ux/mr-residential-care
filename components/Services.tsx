@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-const services = [
+const components = [
   {
-    title: "24-Hour Residential Care",
+    title: "Round-the-Clock Residential Support",
     image: "/images/service-residential.jpg",
     alt: "A resident relaxing in the shared kitchen of a home while a housemate cooks nearby",
     description:
-      "Round-the-clock, in-home support delivered in a structured residential setting, with staff providing exactly the level of assistance each person's plan calls for — no more, no less.",
+      "In-home support delivered in a structured residential setting, with staff providing exactly the level of assistance each person's plan calls for — no more, no less.",
     points: [
       "Person-centered service plans",
       "24/7 on-site staffing and supervision",
@@ -18,7 +18,7 @@ const services = [
     image: "/images/service-habilitative.jpg",
     alt: "Two people cooking together in a home kitchen, smiling",
     description:
-      "Structured, skill-building support designed to help individuals develop and maintain the abilities they need for greater independence, safety, and quality of life.",
+      "Structured, skill-building support built into every residential placement — not a separate program — to help individuals grow toward greater independence.",
     points: [
       "Skill acquisition & behavioral support",
       "Individualized habilitation plans",
@@ -35,16 +35,21 @@ export default function Services() {
           02 — Services
         </p>
         <h2 className="mt-4 text-[32px] font-semibold tracking-tight text-white sm:text-[36px]">
-          Two service lines, one standard of care.
+          24-Hour Residential Care
         </h2>
+        <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-navy-300">
+          One service, built to cover everything a person needs to live
+          safely and grow — habilitative, skill-building support included as
+          part of every placement, not billed as a separate program.
+        </p>
 
         <div className="mt-14 grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2">
-          {services.map((service) => (
-            <div key={service.title} className="bg-navy-950">
+          {components.map((component) => (
+            <div key={component.title} className="bg-navy-950">
               <div className="relative aspect-[16/10] w-full">
                 <Image
-                  src={service.image}
-                  alt={service.alt}
+                  src={component.image}
+                  alt={component.alt}
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
@@ -52,13 +57,13 @@ export default function Services() {
               </div>
               <div className="p-8 sm:p-10">
                 <h3 className="text-[20px] font-semibold text-white">
-                  {service.title}
+                  {component.title}
                 </h3>
                 <p className="mt-4 text-[15px] leading-relaxed text-navy-300">
-                  {service.description}
+                  {component.description}
                 </p>
                 <ul className="mt-6 space-y-3 border-t border-white/10 pt-6">
-                  {service.points.map((point) => (
+                  {component.points.map((point) => (
                     <li
                       key={point}
                       className="flex items-start gap-3 text-[14px] text-navy-200"
