@@ -1,11 +1,11 @@
 const services = [
   {
-    title: "Supported Living",
+    title: "24-Hour Residential Care",
     description:
-      "In-home support that helps individuals live as independently as possible in their own community, with staff providing exactly the level of assistance each person's plan calls for — no more, no less.",
+      "Round-the-clock, in-home support delivered in a structured residential setting, with staff providing exactly the level of assistance each person's plan calls for — no more, no less.",
     points: [
       "Person-centered service plans",
-      "Daily living & community integration support",
+      "24/7 on-site staffing and supervision",
       "Coordination with case managers and families",
     ],
   },
@@ -23,36 +23,31 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-navy-950 py-24">
+    <section id="services" className="border-b border-navy-950 bg-navy-950 py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-[32px] font-semibold tracking-tight text-white sm:text-[40px]">
-            Services
-          </h2>
-          <p className="mt-5 text-[17px] leading-relaxed text-navy-200">
-            Two service lines, one standard of care.
-          </p>
-        </div>
+        <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-brand-400">
+          02 — Services
+        </p>
+        <h2 className="mt-4 text-[32px] font-semibold tracking-tight text-white sm:text-[36px]">
+          Two service lines, one standard of care.
+        </h2>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2">
           {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.04] p-9 backdrop-blur"
-            >
-              <h3 className="text-[22px] font-semibold text-white">
+            <div key={service.title} className="bg-navy-950 p-8 sm:p-10">
+              <h3 className="text-[20px] font-semibold text-white">
                 {service.title}
               </h3>
-              <p className="mt-4 text-[15px] leading-relaxed text-navy-200">
+              <p className="mt-4 text-[15px] leading-relaxed text-navy-300">
                 {service.description}
               </p>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-3 border-t border-white/10 pt-6">
                 {service.points.map((point) => (
                   <li
                     key={point}
-                    className="flex items-start gap-3 text-[14px] text-navy-100"
+                    className="flex items-start gap-3 text-[14px] text-navy-200"
                   >
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-gradient-to-r from-brand-teal to-brand-blue" />
+                    <span className="mt-1.5 h-1.5 w-1.5 flex-none bg-brand-400" />
                     {point}
                   </li>
                 ))}

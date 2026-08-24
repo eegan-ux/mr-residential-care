@@ -17,6 +17,13 @@ const config: Config = {
           "Arial",
           "sans-serif",
         ],
+        mono: [
+          '"SF Mono"',
+          "ui-monospace",
+          "Menlo",
+          "Consolas",
+          "monospace",
+        ],
       },
       colors: {
         navy: {
@@ -49,12 +56,7 @@ const config: Config = {
         },
       },
       boxShadow: {
-        soft: "0 2px 24px rgba(21, 40, 72, 0.06)",
-        card: "0 1px 2px rgba(21, 40, 72, 0.04), 0 8px 24px rgba(21, 40, 72, 0.06)",
-      },
-      borderRadius: {
-        "2xl": "1.25rem",
-        "3xl": "1.75rem",
+        card: "0 1px 2px rgba(21, 40, 72, 0.04)",
       },
     },
   },

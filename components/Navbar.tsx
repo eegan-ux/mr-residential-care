@@ -54,7 +54,7 @@ export default function Navbar() {
             href={REFERRAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-navy-900 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-navy-800 sm:inline-block"
+            className="hidden rounded-md bg-navy-900 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-navy-800 sm:inline-block"
           >
             Make a Referral
           </a>
@@ -105,7 +105,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-1 rounded-full bg-navy-900 px-5 py-3 text-center text-[14px] font-semibold text-white"
+              className="mt-1 rounded-md bg-navy-900 px-5 py-3 text-center text-[14px] font-semibold text-white"
             >
               Make a Referral
             </a>

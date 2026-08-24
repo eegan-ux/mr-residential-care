@@ -28,8 +28,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-navy-500">
-              Supported Living & Habilitative Support in Clackamas County,
-              Oregon.
+              24-Hour Residential Care & Habilitative Support in Clackamas
+              County, Oregon.
             </p>
           </div>
 

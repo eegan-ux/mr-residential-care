@@ -24,28 +24,23 @@ const differentiators = [
 export default function WhyUs() {
   return (
     <section id="why-us" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-[32px] font-semibold tracking-tight text-navy-900 sm:text-[40px]">
-          Why choose us
-        </h2>
-        <p className="mt-5 text-[17px] leading-relaxed text-navy-500">
-          Four things you can count on, every time.
-        </p>
-      </div>
+      <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-brand-600">
+        03 — Why Us
+      </p>
+      <h2 className="mt-4 max-w-lg text-[32px] font-semibold leading-tight tracking-tight text-navy-900 sm:text-[36px]">
+        Four things you can count on, every time.
+      </h2>
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-14 grid divide-y divide-navy-200 border-y border-navy-200 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
         {differentiators.map((item, i) => (
-          <div
-            key={item.title}
-            className="rounded-2xl border border-navy-100 bg-white p-7 shadow-soft"
-          >
-            <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-teal to-brand-blue text-[14px] font-semibold text-white">
+          <div key={item.title} className="px-1 py-8 sm:px-8">
+            <div className="flex h-9 w-9 items-center justify-center border border-navy-200 font-mono text-[13px] text-navy-500">
               {String(i + 1).padStart(2, "0")}
             </div>
-            <h3 className="text-[16px] font-semibold text-navy-900">
+            <h3 className="mt-5 text-[16px] font-semibold text-navy-900">
               {item.title}
             </h3>
-            <p className="mt-3 text-[14px] leading-relaxed text-navy-500">
+            <p className="mt-2.5 max-w-xs text-[14px] leading-relaxed text-navy-500">
               {item.description}
             </p>
           </div>
