@@ -1,4 +1,4 @@
-const REFERRAL_URL = "https://forms.clickup.com/9017869850/f/8cr3hgu-14037";
+const REFERRAL_URL = "https://forms.clickup.com/9017869850/f/8cr3hgu-14057/XYM8CDB8IBOSQC68DL";
 
 const values = [
   { label: "Extreme", sub: "Ownership" },
