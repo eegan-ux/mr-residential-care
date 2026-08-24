@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const REFERRAL_URL = "https://forms.clickup.com/9017869850/f/8cr3hgu-14057/XYM8CDB8IBOSQC68DL";
 
 const values = [
@@ -70,6 +72,19 @@ export default function Hero() {
               </div>
             ))}
           </dl>
+        </div>
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-6 pb-24">
+        <div className="relative aspect-[21/9] w-full overflow-hidden border border-navy-200">
+          <Image
+            src="/images/hero-care.jpg"
+            alt="A support worker visiting with the person he supports in their living room"
+            fill
+            priority
+            sizes="(min-width: 1152px) 1152px, 100vw"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const differentiators = [
   {
     title: "Safety-First Culture",
@@ -24,12 +26,26 @@ const differentiators = [
 export default function WhyUs() {
   return (
     <section id="why-us" className="mx-auto max-w-6xl px-6 py-24">
-      <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-brand-600">
-        03 — Why Us
-      </p>
-      <h2 className="mt-4 max-w-lg text-[32px] font-semibold leading-tight tracking-tight text-navy-900 sm:text-[36px]">
-        Four things you can count on, every time.
-      </h2>
+      <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16">
+        <div>
+          <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-brand-600">
+            03 — Why Us
+          </p>
+          <h2 className="mt-4 max-w-lg text-[32px] font-semibold leading-tight tracking-tight text-navy-900 sm:text-[36px]">
+            Four things you can count on, every time.
+          </h2>
+        </div>
+
+        <div className="relative aspect-[4/3] w-full border border-navy-200 lg:w-72">
+          <Image
+            src="/images/why-us-team.jpg"
+            alt="A genuine, relaxed smile from a member of our care team"
+            fill
+            sizes="(min-width: 1024px) 288px, 100vw"
+            className="object-cover"
+          />
+        </div>
+      </div>
 
       <div className="mt-14 grid divide-y divide-navy-200 border-y border-navy-200 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
         {differentiators.map((item, i) => (
