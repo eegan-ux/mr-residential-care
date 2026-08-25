@@ -1,4 +1,4 @@
-const CAREERS_URL = "https://forms.clickup.com/9017869850/f/8cr3hgu-14137/80INGCRYINHLNSI89H";
+const CAREERS_URL = "https://forms.clickup.com/9017869850/f/8cr3hgu-10957/VCHPMNCWPBOHL1QPUU";
 
 export default function Careers() {
   return (
